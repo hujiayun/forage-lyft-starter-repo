@@ -1,11 +1,11 @@
 import unittest
 from datetime import datetime
 
-from engine.model.calliope import Calliope
-from engine.model.glissade import Glissade
-from engine.model.palindrome import Palindrome
-from engine.model.rorschach import Rorschach
-from engine.model.thovex import Thovex
+from model.car.calliope import Calliope
+from model.car.glissade import Glissade
+from model.car.palindrome import Palindrome
+from model.car.rorschach import Rorschach
+from model.car.thovex import Thovex
 
 
 class TestCalliope(unittest.TestCase):
@@ -14,7 +14,6 @@ class TestCalliope(unittest.TestCase):
         last_service_date = today.replace(year=today.year - 3)
         current_mileage = 0
         last_service_mileage = 0
-
         car = Calliope(last_service_date, current_mileage, last_service_mileage)
         self.assertTrue(car.needs_service())
 
