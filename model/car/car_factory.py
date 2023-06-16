@@ -4,7 +4,8 @@ from model.car.car import Car
 from model.engine.capulet_engine import CapuletEngine
 from model.engine.sternman_engine import SternmanEngine
 from model.engine.willoughby_engine import WilloughbyEngine
-
+from model.tire.carrigan import CarriganTire
+from model.tire.octoprime import OctoprimeTire
 
 class CarFactory:
     @staticmethod
